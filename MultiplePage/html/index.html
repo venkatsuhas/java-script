@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management System : You will get all the Books U Want</title>
+   <link rel="shortcut icon" href="../Images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <div class="headerBlock">
+          <img src="../Images/LOGO.png" alt="" />
+          <h1>Book Management System</h1>
+        </div>
+        <div class="navBlock">
+          <a href="#" id="bl" title="List of Available Books"
+            ><span><i class="fal fa-list-alt"></i></span> Book List
+          </a>
+          <a href="./addBooks.html" id="ad" title="Add books"
+            >Add Books <span><i class="far fa-folder-plus"></i></span
+          ></a>
+        </div>
+        <div class="mainBlock">
+         <form class="mySearch">
+            <select class="selection" name="choices" id="choice" 
+            style="width: 70px; height: 28px; border: none;border-radius: 5px;">
+                <option value="select">Select</option>
+                <option value="id">Id</option>
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+                <option value="rating">Rating</option>
+                <option value="price">Price</option>
+            </select>
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              placeholder="Search for Books..."
+            />
+            <span><i class="fal fa-search"></i></span>
+            <button type="submit" class="button1" id="search" >Search</button> <br><br>
+          </form>
+        <div class="contentBlock" id="content">
+          <h1>Book List</h1>
+          <table id="bookTable">
+              <thead>
+                <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th >Author</th>
+                <th>Rating</th>
+                <th>Price</th>
+                <th >Actions</th>
+              </tr>
+              </thead>
+              <tbody></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <script type="module" src="../js/Book.js"></script>
+  </body>
+</html>

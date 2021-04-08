@@ -1,0 +1,26 @@
+
+.contentBlock h1 {
+  margin-left: 550px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: rgb(3, 23, 90);
+  font-size: 1.5em;
+  padding: 5px 0;
+}
+.contentBlock table {
+  margin-top: 25px;
+  width: 75%;
+  margin: 0 auto;
+}
+.contentBlock {
+   position: relative; 
+  right: 100px;
+}
+.contentBlock table,
+.contentBlock th,
+.contentBlock td {
+  border: 2px solid rgb(110, 3, 105);
+  border-collapse: collapse;
+  padding: 10px 15px;
+}

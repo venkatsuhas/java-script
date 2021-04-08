@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Management System : You will get all the Books U Want</title>
+    <link
+      rel="shortcut icon"
+      href="../Images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/addBooks.css" />
+  </head>
+  <body>
+    <section>
+      <article>
+        <div class="headerBlock">
+          <img src="../images/LOGO.png" alt="" />
+          <h1>Book Management System</h1>
+        </div>
+        <div class="navBlock">
+          <a href="./index.html" id="bl" title="List of Available Books"
+            ><span><i class="fas fa-home-lg-alt"></i></span> Home
+          </a>
+          <a href="#" id="ad" title="Add books"
+            >About Us<span><i class="fad fa-users"></i></i></span
+          ></a>
+        </div>
+        <div class="input" id="add">
+          <form action="#" id="form" >
+            <label for="ID">ID : </label>
+            <input type="text" name="ID" id="Id" class="add" />
+            <br /><br />
+            <label for="Title">Title : </label>
+            <input type="text" name="Title" id="Title" class="add" />
+            <br /><br />
+            <label for="Author">Author : </label>
+            <input type="text" name="Author" id="Author" class="add" />
+            <br /><br />
+            <label for="Rating">Rating : </label>
+            <input type="text" name="Rating" id="Rating" class="add" />
+            <br /><br />
+            <label for="Price">Price : </label>
+            <input type="text" name="Price" id="Price" class="add" />
+            <br /><br />
+            <button id="Add">Add Book</button>
+          </form>
+        </div>
+      </article>
+    </section>
+    <script type="module" src="../js/addBook.js"></script>
+  </body>
+</html>
