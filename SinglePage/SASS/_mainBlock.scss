@@ -1,0 +1,46 @@
+@mixin margin($marginLeft, $marginTop, $marginRight, $marginBottom) {
+  margin-top: $marginTop;
+  margin-left: $marginLeft;
+}
+
+.mainBlock {
+  @include margin(20px, 15px, 0, 0);
+  div {
+    margin-left: 150px;
+  }
+  form {
+    width: 90%;
+    label {
+      font-weight: bolder;
+    }
+    input {
+      width: 45%;
+      height: 30px;
+      background-color: #fff;
+      border: none;
+      padding: 0 23px 0 5px;
+      border-radius: 5px;
+    }
+    button {
+      color: #111;
+      background-color: rgb(197, 44, 197);
+      border: none;
+      border-radius: 3px;
+      font-weight: bolder;
+      &:hover {
+        color: #eee;
+        background-color: rgb(80, 6, 252);
+      }
+    }
+    .button1 {
+      padding: 8px 25px;
+    }
+  }
+  span {
+    i {
+      position: relative;
+      top: 1px;
+      right: 27px;
+    }
+  }
+}

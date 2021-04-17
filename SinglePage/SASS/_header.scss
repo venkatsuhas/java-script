@@ -1,0 +1,31 @@
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin padding($paddingLeft, $paddingTop, $paddingRight, $paddingBottom) {
+  padding-left: $paddingLeft;
+  padding-top: $paddingTop;
+  padding-right: $paddingRight;
+  padding-bottom: $paddingBottom;
+}
+
+.headerBlock {
+  @include flexCenter();
+
+  h1 {
+    @include padding(35px, 0px, 0px, 0px);
+    font-size: 2em;
+    height: 100px;
+    color: $headerColor;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "./navBlock";
+
+.input {
+  width: 30%;
+  height: 60%;
+  margin: 0 auto;
+  @include position(720px, 0, 0, 50px);
+  visibility: hidden;
+
+  form {
+    background-image: url("../Images/elegant-white-background-with-shiny-lines_1017-17580.jpg");
+    border-radius: 30%;
+    margin: 0 90px;
+    padding: 70px;
+
+    .add {
+      background-color: rgb(212, 205, 205);
+      color: rgb(0, 0, 0);
+      border: none;
+      width: 100%;
+      height: 30px;
+    }
+    #Add {
+      padding: 10px 20px;
+      margin-top: 20px;
+      margin-left: 65px;
+      border-radius: 5px;
+    }
+  }
+}

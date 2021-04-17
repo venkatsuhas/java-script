@@ -1,0 +1,21 @@
+@mixin position($left, $top, $right, $bottom) {
+  position: relative;
+  top: $top;
+  left: $left;
+}
+
+.navBlock {
+  background-color: rgb(114, 56, 23);
+  height: 35px;
+
+  a {
+    text-decoration: none;
+    @include position(950px, 15px, 0, 0);
+    margin-left: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    &:hover {
+      color: rgb(0, 17, 255);
+    }
+  }
+}

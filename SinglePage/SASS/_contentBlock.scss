@@ -1,0 +1,27 @@
+@import "./mainBlock";
+@import "./navBlock";
+
+.contentBlock {
+  visibility: hidden;
+  @include position(0, 0, 300px, 550px);
+
+  h1 {
+    @include margin(600px, 40px, 0px, 20px);
+    text-decoration: underline;
+    color: rgb(3, 23, 90);
+    font-size: 1.5em;
+    padding: 5px 0;
+  }
+  table {
+    margin-top: 25px;
+    width: 75%;
+    margin: 0 auto;
+  }
+  table,
+  th,
+  td {
+    border: 2px solid rgb(110, 3, 105);
+    border-collapse: collapse;
+    padding: 10px 15px;
+  }
+}
