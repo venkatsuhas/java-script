@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/font-awesome/css/font-awesome.min.css"
+    />
+
+    <style>
+      body {
+        background-color: aqua;
+        overflow: hidden;
+      }
+      .container {
+        position: relative;
+        top: 130px;
+        left: 550px;
+      }
+      #demo {
+        color: yellow;
+      }
+      star-rating {
+        font-size: 30px;
+      }
+      i {
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Star Rating System</h1>
+      <label for="score">Score : </label>
+      <input type="number" name="score" id="score" /> <br />
+      <br />
+      <label for="total">Total : </label>
+      <input type="number" name="total" id="total" /> <br />
+      <br />
+      <input type="submit" value="submit" id="submit" onclick="submit()" />
+      <br /><br />
+
+      <p id="demo"></p>
+    </div>
+
+    <script>
+      function submit() {
+        let score = document.getElementById("score").value;
+        // console.log("my present value is:" + score);
+        let total = document.getElementById("total").value;
+        // console.log("my total value is:" + total);
+        document.getElementById(
+          "demo"
+        ).innerHTML = `<star-rating score=${score} total=${total} min="0"}></star-rating>`;
+      }
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
