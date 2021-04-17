@@ -12,7 +12,7 @@
 
     <style>
       body {
-        background-color: aqua;
+        background-color: grey;
         overflow: hidden;
       }
       .container {
@@ -50,9 +50,9 @@
     <script>
       function submit() {
         let score = document.getElementById("score").value;
-        // console.log("my present value is:" + score);
+        
         let total = document.getElementById("total").value;
-        // console.log("my total value is:" + total);
+        
         document.getElementById(
           "demo"
         ).innerHTML = `<star-rating score=${score} total=${total} min="0"}></star-rating>`;
