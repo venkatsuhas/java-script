@@ -1,0 +1,267 @@
+ 
+body {
+    background-color: #f0c8ee;
+    padding: 20px;
+    margin: 0;
+    /* background-image: url(8ba86017709af3482ba15c5a28ed1764.jpg); */
+  }
+  h1, h2, p, ul, li {
+    font-family: sans-serif;
+  }
+  h1{
+    margin-left: 450px;
+    text-decoration: underline;
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul.header {
+    background-color: rgb(7, 37, 43);
+    padding: 0;
+    width: 100%;
+  }
+  ul.header li a {
+    color: #FFF;
+    font-weight:600;
+    /* text-decoration: none; */
+    padding: 10px;
+    /* width: max-content; */
+    display: inline-block;
+  }
+  .content {
+    background-color: #FFF;
+    padding: 20px;
+  }
+  .content h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+  }
+  .carousel-div{
+    width: 1000px;
+    margin-left: 160px;
+  }
+  .search{
+    width: 50%;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding:7px 0 ;
+    margin-left: 20px;
+  }
+  #search-button{
+    margin-left: 20px;
+  }
+  .searchDiv{
+    margin-bottom: 20px;
+  }
+  #search-button,#add-button,#review-submit{
+    border: none;
+    border-radius: 15px;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width:fit-content;
+    font-size: 15px;
+    font-style: bold;
+    /* box-shadow: 5px 10px; */
+  }
+  #del-button{
+    border: none;
+    border-radius: 15px;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: rgb(190, 22, 22);
+    text-align: center;
+    cursor: pointer;
+    width:fit-content;
+    font-size: 15px;
+    font-style: bold;
+    /* box-shadow: 5px 10px; */
+
+
+  }
+  .book-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    max-width: 240px;
+    height: 550px;
+    /* margin: auto; */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 20px;
+    float:left;
+    color:#000;
+    background-color: white;
+  }
+  .card{
+    background-color: white;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-content: center;
+    border-radius: 15px;
+    padding: 25px 25px 25px 25px;
+  }
+  .book-card:hover{
+    opacity: 0.5;
+  }
+  .price {
+    color:#000;
+    font-size: 22px;
+  }
+  #img{
+    width:80%;
+  }
+  #imgDetails{
+    width:80%;
+    align-content: center;
+  }
+  .form-area{
+    background-color: white;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-content: center;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+  }
+  .book-form{
+    display: block;
+    text-align: center;
+  }
+  #author-list {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    border-radius: 5px;
+  }
+  #author-list:hover {
+    color: rgb(10, 14, 226);
+  }
+  #author-list a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .authors {
+    float: left;
+    cursor: pointer;
+  }
+  .authorBooks {
+    margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .authorName {
+    text-align: center;
+    text-decoration: underline;
+  }
+  #logout{
+    margin-left: 150px;
+  }
+  #login{
+    margin-left: 310px;
+  }
+  .field{
+    background-color: grey;
+    /* width: 50%; */
+    height: 110px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+  }
+  .review-size{
+    font-size: 25px;
+  }
+  #Textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+  }
+  .stars{
+    display: inline-block;
+  }
+  /* #rating{ */
+    /* display: flex; */
+    /* margin-left: 10px; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 10px; */
+  /* } */
+  #review-submit{
+    margin-top: 10px;
+  }
+  /* #register{
+    margin-left: 110px;
+  } */
+
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+    /* width: 20%; */
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
